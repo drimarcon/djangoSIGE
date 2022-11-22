@@ -19,7 +19,8 @@ SECRET_KEY = 'a16j-0vr5pe&4k)ti_6($@34o!2gbbnhatr_*-q%j(ltd4b#hb'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', default=[], cast=Csv())
+ALLOWED_HOSTS = ['*']
+#ALLOWED_HOSTS = config('ALLOWED_HOSTS', default=[], cast=Csv())
 #ALLOWED_HOSTS = ['https://tetris-sistema-gestao.herokuapp.com/']
 
 if not DEFAULT_DATABASE_URL:
