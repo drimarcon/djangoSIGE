@@ -152,3 +152,5 @@ LOGIN_NOT_REQUIRED = (
 )
 
 #django_heroku.settings(locals())
+
+STATIC_ROOT = '/home/drimarcon/drimarcon.pythonanywhere.com/static'
